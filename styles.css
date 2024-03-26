@@ -1,0 +1,112 @@
+@font-face {
+  font-family: norse-bold;
+  src: url('assets/fonts/Norse-Bold.otf');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  background-color: #fff;
+  margin-left: -24px;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 24px;
+  box-shadow: 4px 4px 10px -6px rgba(66, 68, 90, 1);
+}
+
+input {
+  appearance: none;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.odin-logo {
+  height: 100px;
+}
+
+.imageCol {
+  background-image: url('assets/bg.jpg');
+  background-size: cover;
+  flex: 0 0 40%;
+}
+
+.nameBannerCol {
+  padding: 12px 0;
+  position: relative;
+  top: 200px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: norse-bold, sans-serif;
+  font-size: 64px;
+}
+
+.credits {
+  color: #ffffffa4;
+  position: absolute;
+  text-align: center;
+  bottom: 10px;
+  left: 0;
+  right: 150px;
+  margin-right: 50%;
+}
+
+.formCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 24px;
+  gap: 24px;
+  background-color: yellow;
+}
+
+.submit {
+  margin-top: 24px;
+  background-color: rgb(1, 100, 1);
+  border-color: rgb(1, 100, 1);
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  border-style: none;
+  padding: 12px 24px;
+  box-shadow: 4px 4px 10px -6px rgba(66, 68, 90, 1);
+}
+
+.inputs {
+  display: flex;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.formTitle {
+  padding-bottom: 12px;
+}
+.account {
+  font-weight: bold;
+}
+p > span {
+  color: rgb(1, 100, 1);
+}
+h2 > span {
+  font-style: italic;
+}
