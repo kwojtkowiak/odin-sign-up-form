@@ -23,11 +23,42 @@ fieldset {
   padding-left: 24px;
   padding-top: 12px;
   padding-bottom: 24px;
-  box-shadow: 4px 4px 10px -6px rgba(66, 68, 90, 1);
+  box-shadow: 4px 2px 20px -6px rgba(66, 68, 90, 1);
 }
 
 input {
   appearance: none;
+}
+
+input {
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+}
+
+input:focus {
+  border: 1px solid #93b0e7;
+  outline: none;
+}
+
+input:invalid:focus {
+  border: 1px solid #ff0000;
+  outline: none;
+}
+
+label {
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+}
+
+p > span {
+  color: rgb(1, 100, 1);
+}
+h2 > span {
+  font-style: italic;
+}
+
+.minorText {
+  padding-bottom: 12px;
 }
 
 .container {
@@ -74,7 +105,7 @@ input {
   justify-content: center;
   padding-left: 24px;
   gap: 24px;
-  background-color: yellow;
+  background-color: rgba(255, 253, 253, 0.918);
 }
 
 .submit {
@@ -86,11 +117,19 @@ input {
   font-weight: bold;
   border-style: none;
   padding: 12px 24px;
-  box-shadow: 4px 4px 10px -6px rgba(66, 68, 90, 1);
+  box-shadow: 4px 2px 20px -6px rgba(66, 68, 90, 1);
 }
 
 .inputs {
   display: flex;
+  gap: 36px;
+}
+
+.inputColumn {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  gap: 12px;
 }
 
 .input {
@@ -103,10 +142,4 @@ input {
 }
 .account {
   font-weight: bold;
-}
-p > span {
-  color: rgb(1, 100, 1);
-}
-h2 > span {
-  font-style: italic;
 }
